@@ -1,0 +1,291 @@
+<!DOCTYPE><html>
+
+<head>
+<title>Geography Trivia</title>
+<script src = "https://code.jquery.com/jquery.js"></script>
+<script src = "assets/javascript/app.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+<link href = "assets/css/style.css" rel="stylesheet"/>
+
+</head>
+<style>
+body {
+    background-image: url("assets/images/background_Photo.jpg");
+}
+
+h1 {
+    margin-left: 280px;
+}
+
+p {
+    margin-left: 320px;
+    color: white;
+}
+
+.jumbotron-jumbotron-fluid {
+    background-image: url("assets/images/JumboTron_Background.jpg");
+    height: 150px;
+
+}
+
+.display-4 {
+    font-weight: bold
+    
+}
+
+.lead {
+    font-weight: bold;
+}
+
+.Start_Button {
+    margin-left:450px;
+    margin-top: 200px;
+    
+}
+
+.timer {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-right: 200px;
+}
+
+.list-group {
+    background-color: black;
+    font-weight: bold;
+}
+
+.Questions {
+    color: white;
+    background-color: maroon;
+    font-weight: bold;
+    margin-right: 200px;
+}
+
+#Correct {
+    color: white;
+    font-weight: bold;
+    font-size: 56px;
+}
+
+#Incorrect {
+    color: white;
+    font-weight: bold;
+    font-size: 56px;
+}
+
+.list-group {
+    margin-right: 200px;
+}
+
+.PhotoAnswers {
+    color: white;    
+}
+
+.Restart_Button {
+    margin-left:750px;
+    margin-top: 200px;
+}
+
+#Gif {
+    margin-top: -200px;
+}
+
+#Correct {
+    margin-top: -20px;
+}
+
+
+
+</style>
+
+
+<body>
+<div class = "Header">
+    <div class="jumbotron-jumbotron-fluid">
+        <div class="container">
+        <h1 class="display-4">The Geography Quiz</h1>
+        <p class="lead">Answer each Question Before the Time Runs Out</p>
+        </div>
+    </div>
+</div>
+
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+            <div class = "timer">
+            </div>
+        </div>
+    </div>
+
+<div class = "Questions">
+    <div class = "row">
+        <div class = "col-md-12">
+            <div class = "Game"></div>
+            <div class = "Game1"></div>
+            <div class = "Game2"></div>
+            <div class = "Game3"></div>
+            <div class = "Game4"></div>
+            <div class = "Game5"></div>
+            <div class = "Game6"></div>
+            <div class = "Game7"></div>
+        </div>
+    </div>
+</div>
+
+
+    <div class = "row">
+        <div class = "col-md-12">
+        <div class = "answers">
+        <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary1"><div class = "list-group-item1"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary2"><div class = "list-group-item2"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success3"><div class = "list-group-item3"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning4"><div class = "list-group-item4"></div></a>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class = "row">
+            <div class = "col-md-12">
+            <div class = "answers2">
+            <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary1"><div class = "list-group-item5"></div></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary2"><div class = "list-group-item6"></div></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-success3"><div class = "list-group-item7"></div></a>
+                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning4"><div class = "list-group-item8"></div></a>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    <div class = "row">
+        <div class = "col-md-12">
+        <div class = "answers3">
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action list-group-item-primary1"><div class = "list-group-item9"></div></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary2"><div class = "list-group-item10"></div></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-success3"><div class = "list-group-item11"></div></a>
+            <a href="#" class="list-group-item list-group-item-action list-group-item-warning4"><div class = "list-group-item12"></div></a>
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <div class = "row">
+            <div class = "col-md-12">
+            <div class = "answers4">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary1"><div class = "list-group-item13"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary2"><div class = "list-group-item14"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success3"><div class = "list-group-item15"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning4"><div class = "list-group-item16"></div></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class = "row">
+            <div class = "col-md-12">
+            <div class = "answers5">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary1"><div class = "list-group-item17"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary2"><div class = "list-group-item18"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success3"><div class = "list-group-item19"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning4"><div class = "list-group-item20"></div></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+            <div class = "col-md-12">
+            <div class = "answers6">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary1"><div class = "list-group-item21"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary2"><div class = "list-group-item22"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success3"><div class = "list-group-item23"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning4"><div class = "list-group-item24"></div></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+            <div class = "col-md-12">
+            <div class = "answers7">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary1"><div class = "list-group-item25"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-secondary2"><div class = "list-group-item26"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-success3"><div class = "list-group-item27"></div></a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-warning4"><div class = "list-group-item28"></div></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+<div class = "row"></div>
+<div class = "Start_Button">
+<button type="button" class="btn btn-dark btn"><h2>Start</h2></button>
+</div>
+
+<div class = "Restart_Button">
+    <button type = "button" class="btn btn-dark btn"><h2>Retry</h2></button>
+</div>
+
+<div class = "Photos">
+    <div class = "row">
+        <img id = "img1" src = "assets/images/map-of-asia.gif" width="400" height="300">
+        <img id = "img2" src = "assets/images/Flag_of_Canada.svg.png" width="500" height="300">
+        <img id = "img3" src = "assets/images/Peru.jpg" width="300" height="500">
+        <img id = "img4" src = "assets/images/sudan-location-map.jpg" width="600" height="500">
+        <img id = "img5" src = "assets/images/Alaska.jpg" width="400" height= "500">
+        <img id = "img6" src = "assets/images/Saudi_Arabia.png" width="400" height="300">
+        <img id = "img7" src = "assets/images/Brazil.jpg" width="600" height="500">
+    </div>
+</div>
+
+<div class = "PhotoAnswers">
+    <div class = "row">
+        <div id = "Answer1">
+            <h2>The Correct Answer is Asia</h2>
+        </div>
+        <div id = "Answer2">
+            <h2>The Correct Answer is Canada</h2>
+        </div>
+        <div id = "Answer3">
+            <h2>The Correct Answer is Peru</h2>
+        </div>
+        <div id = "Answer4">
+            <h2>The Correct Answer is Sudan</h2>
+        </div>
+        <div id = "Answer5">
+            <h2>The Correct Answer is Alaska</h2>
+        </div>
+        <div id = "Answer6">
+            <h2>The Correct Answer is Saudi Arabia</h2>
+        </div>
+        <div id = "Answer7">
+            <h2>The Correct Answer is Brazil</h2>
+        </div>
+    </div>
+</div>
+
+<div id = "SpongeBob">
+        <img id = "Gif" src = "assets/images/Dancing_SpongeBob.gif">
+    </div>
+
+
+<div id = "Correct">
+    </div>
+    
+    <div id = "Incorrect">
+    </div>
+
+
+</div>
+</body>
+
